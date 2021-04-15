@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@drawable/mywave3">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+    <ListView
+        android:id="@+id/markelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blue_button_background"
+         />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:layout_alignParentTop="true"
+          >
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Mark +"
+        android:visibility="invisible"
+        android:id="@+id/teacherAddMark"
+        />
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/backtoList"
+              android:visibility="invisible"
+              android:text="Back"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherMarkEditText"
+        android:layout_gravity="center"
+        android:hint="Mark Title"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherMarkValueEdit"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:hint="Mark Value"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:visibility="invisible"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherMarkMax"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:hint="Mark Maximume"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:textColorHint="@color/white"
+        />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Submit Mark"
+        android:id="@+id/teacherSubmitMark"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherMarksRecycler"
+        android:visibility="invisible"
+        android:layout_margin="5dp"
+        />
+      </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createBtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/creatingclassbackground"
+    tools:context=".AddClass"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+    <TextView
+        android:id="@+id/Creatingclassmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="#000000"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="25dp"
+        android:text="Creating New Class "
+        android:textAlignment="center"
+        android:textColor="#FFFDFD"
+        android:textSize="24sp" />
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:background="#99141414"
+              android:orientation="horizontal"
+              android:layout_margin="15dp"
+              android:padding="5dp"
+              android:gravity="center_vertical"
+              android:layout_gravity="center_horizontal"
+              >
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+                  android:fontFamily="casual"
+                  android:padding="25dp"
+                  android:text="Grade : "
+                  android:textAlignment="center"
+                  android:textColor="#FFFFFF"
+                  android:textColorHighlight="#9A0505"
+                  android:textSize="20sp" />
+
+               <Spinner
+
+
+                   android:layout_width="150dp"
+                   android:layout_height="30dp"
+                   android:id="@+id/gradeSpinner"
+                   android:textAlignment="center"
+                   android:entries="@array/Grades"
+                   android:layout_marginLeft="50dp"
+                   android:background="@drawable/cutomespinner"
+
+
+                   />
+
+
+         </LinearLayout>
+    <LinearLayout
+        android:background="#99141414"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+            android:padding="25dp"
+            android:text="Grade No. : "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#9A0505"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/cutomespinner"
+            android:textAlignment="center"
+            android:id="@+id/gradeNoSpinner"
+            android:entries="@array/Grades_No"
+            android:layout_marginLeft="15dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:layout_margin="15dp"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="#99141414"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="casual"
+            android:padding="25dp"
+            android:text="Subject : "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#9A0505"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:id="@+id/subjectsSpinner"
+            android:entries="@array/Subjects"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/cutomespinner"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btncreate"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/amaranth_bold_italic"
+        android:text="Create New class"
+        android:textAlignment="center"
+        android:textColor="#1BCC22"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    tools:context=".StudentClasses">
+
+
+
+
+        <VideoView
+            android:id="@+id/video_background_my_class"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+
+    <ScrollView
+        android:id="@+id/scrolview1"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/video_background_my_class"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/classesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center"
+            android:text="Your Classes :"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentClassesRecycler"
+            android:background="#99141414"
+            />
+        <!--write a code xml here-->
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

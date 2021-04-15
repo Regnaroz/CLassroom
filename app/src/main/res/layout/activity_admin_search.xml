@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ddd"
+    tools:context=".Admin_Search">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_sd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            app:cardElevation="15dp"
+
+            >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <TextView
+            android:id="@+id/text_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Search"
+            android:textColor="@android:color/black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:id="@+id/searchBtn"
+            android:layout_height="66dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/card_sd"
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/textSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:hint="Please enter name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+
+            android:layout_below="@id/card_sd"
+            android:layout_toEndOf="@id/searchBtn"
+            android:textColor="@color/black"/>
+
+
+             <Spinner
+                 android:id="@+id/typeSearch"
+                 android:layout_width="wrap_content"
+                 android:layout_height="66dp"
+                 android:layout_below="@id/card_sd"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="15dp"
+                 android:layout_toEndOf="@id/textSearch"
+                 />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

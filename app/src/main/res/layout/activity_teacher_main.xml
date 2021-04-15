@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mywave3"
+    tools:context=".TeacherMain">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="28dp"
+        android:layout_gravity="center"
+
+        >
+
+
+        <TextView
+            android:id="@+id/SSNText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="#99141414"
+            android:fontFamily="@font/amaranth_bold_italic"
+            android:padding="25dp"
+            android:text="Welcome Mr Khalid"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/teacher_my_class_cardview"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                android:clickable="true"
+                android:layout_margin="15dp"
+                app:cardElevation="15dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#99141414"
+                    >
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/teacher_lottie_myclass"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/lottie_my_class"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:text="My class"
+                        android:textColor="@color/sweet_dialog_bg_color"
+                        android:layout_below="@id/teacher_lottie_myclass"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/teacher_info_cardview"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                android:clickable="true"
+                android:layout_margin="15dp"
+                app:cardElevation="15dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#99141414"
+
+                    >
+                    <com.airbnb.lottie.LottieAnimationView
+
+                        android:id="@+id/teacher_lottie_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/lottie_information"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teacher Information"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:textColor="@color/sweet_dialog_bg_color"
+                        android:layout_below="@id/teacher_lottie_info"
+                        android:layout_centerHorizontal="true"
+
+                        />
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/log_out_cardview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="15dp"
+            android:clickable="true"
+            app:cardElevation="15dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#99141414"
+
+                >
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:id="@+id/student_img_logOut"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/lottielogin"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log out"
+                    android:fontFamily="@font/berkshire_swash"
+                    android:textSize="18dp"
+                    android:textColor="@color/sweet_dialog_bg_color"
+                    android:layout_below="@id/student_img_logOut"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

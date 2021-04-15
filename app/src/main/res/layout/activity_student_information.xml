@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:background="@drawable/back"
+    tools:context=".Student_information">
+
+
+
+
+
+
+
+
+
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  >
+
+
+                  <com.airbnb.lottie.LottieAnimationView
+
+                      android:id="@+id/lottie_info"
+                      android:layout_width="match_parent"
+                      android:layout_height="220dp"
+                      app:lottie_autoPlay="true"
+                      app:lottie_loop="true"
+                      app:lottie_rawRes="@raw/info_animation"
+                      android:layout_alignParentTop="true"
+                      android:layout_centerHorizontal="true"
+                      android:layout_margin="10dp"
+                      />
+
+
+
+
+                  <TextView
+                            android:id="@+id/tt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Student name:"
+                            android:layout_margin="10dp"
+                            android:textSize="18dp"
+                            android:layout_below="@id/lottie_info"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:textColor="@color/white"
+                            />
+
+
+                  <TextView
+                      android:id="@+id/text_name_student"
+                      android:layout_width="wrap_content"
+                      android:layout_height="45dp"
+                      android:layout_toRightOf="@id/tt1"
+                      android:layout_toEndOf="@id/tt7"
+                      android:layout_below="@id/lottie_info"
+                      android:fontFamily="@font/berkshire_swash"
+                      android:text="######"
+                      android:layout_margin="10dp"
+                      android:textColor="@color/white"
+                      android:textSize="18dp" />
+
+
+                    <TextView
+
+
+                            android:id="@+id/tt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="National ID:"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/tt1"
+                            android:textColor="@color/white"
+                        />
+
+                        <TextView
+                            android:id="@+id/textview_ssn_student"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="######"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/tt1"
+                            android:layout_toRightOf="@id/tt1"
+                            android:layout_toEndOf="@id/tt7"
+                            android:textColor="@color/white"
+                            />
+
+                        <TextView
+                            android:id="@+id/tt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone number :"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/tt2"
+                            android:textColor="@color/white"
+                            />
+
+                        <TextView
+                            android:id="@+id/textview_phone_student"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="######"
+                            android:layout_margin="10dp"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:layout_below="@id/tt2"
+                            android:layout_toRightOf="@id/tt3"
+                            android:layout_toEndOf="@id/tt7"
+                            android:textColor="@color/white"
+                            />
+
+
+
+
+                        <TextView
+                            android:id="@+id/tt6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Parent name:"
+                            android:layout_margin="10dp"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:layout_below="@id/textview_phone_student"
+                            android:textColor="@color/white"
+
+                            />
+
+
+                        <TextView
+                            android:id="@+id/textview_name_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="######"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/textview_phone_student"
+                            android:layout_toRightOf="@id/tt6"
+                            android:layout_toEndOf="@id/tt7"
+                            android:textColor="@color/white"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tt7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Parent National ID:"
+                            android:layout_margin="10dp"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:layout_below="@id/tt6"
+                            android:textColor="@color/white"
+                            />
+                        <TextView
+                            android:id="@+id/textview_ssn_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="######"
+                            android:layout_margin="10dp"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:layout_below="@id/tt6"
+                            android:layout_toRightOf="@id/tt7"
+                            android:layout_toEndOf="@id/tt7"
+                            android:textColor="@color/white"
+
+                            />
+                        <TextView
+                            android:id="@+id/tt8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone parent :"
+                            android:layout_margin="10dp"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:layout_below="@id/tt7"
+                            android:textColor="@color/white"
+                            />
+
+                        <TextView
+                            android:id="@+id/textview_phone_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="######"
+                            android:layout_margin="10dp"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/berkshire_swash"
+                            android:layout_below="@id/tt7"
+                            android:layout_toRightOf="@id/tt8"
+                            android:textColor="@color/white"
+                            android:layout_toEndOf="@id/tt7"
+                            />
+
+
+
+
+              </RelativeLayout>
+
+
+</ScrollView>
+
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".parentChidrenClasses"
+    >
+
+
+
+    <ScrollView
+        android:id="@+id/scrolview1"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@drawable/ic_wave_darkblue"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+
+            >
+
+
+            <TextView
+                android:id="@+id/classesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+
+                android:fontFamily="@font/alfa_slab_one"
+                android:gravity="center"
+                android:text="Classes :"
+                android:textColor="#000000"
+                android:textSize="36sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/childClassesrecycle"
+                android:background="#99141414"
+                />
+            <!--write a code xml here-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

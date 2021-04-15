@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/gradeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/alef_bold"
+        android:text="Grade : "
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="@color/white"
+       />
+
+    <TextView
+        android:id="@+id/gradeNoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/alef_bold"
+        android:text="Garde No. :"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/subjectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/alef_bold"
+        android:text="Subject"
+        android:textColorHighlight="#B10000"
+        android:textColorLink="#E81717"
+        android:textSize="24sp"
+        android:layout_marginLeft="45dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/goToClassBtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/greenrounded"
+        android:fontFamily="@font/anton"
+        android:padding="15dp"
+        android:text="Go To Class "
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="
+        ***************************************
+"               android:textAlignment="center"
+
+        android:textColor="#B80606"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>

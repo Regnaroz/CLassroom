@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.school_app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".childClassRoom"></activity>
+        <activity android:name=".parentChidrenClasses" />
+        <activity android:name=".parentChildren" />
+        <activity android:name=".Admin_Search_Student" />
+        <activity android:name=".Teacher_Information" />
+        <activity android:name=".TeacherMain" />
+        <activity android:name=".studentClassRoom" />
+        <activity android:name=".Admin_information" />
+        <activity android:name=".Parent_information" />
+        <activity android:name=".Parent" />
+        <activity android:name=".uploadFileActivity" />
+        <activity android:name=".ClassVideos" />
+        <activity android:name=".Student_information" />
+        <activity android:name=".StudentClasses" />
+        <activity android:name=".StudentUi" />
+        <activity android:name=".Admin_Search" />
+        <activity android:name=".uploadVideo" />
+        <activity android:name=".TeacherClassRoom" />
+        <activity android:name=".AddClass" />
+        <activity android:name=".TeacherUI" />
+        <activity android:name=".splashWelcom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".add" />
+        <activity android:name=".setting" />
+        <activity android:name=".admin" />
+        <activity android:name=".act2" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

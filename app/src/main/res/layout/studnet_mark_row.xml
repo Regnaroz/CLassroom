@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="45dp"
+    android:elevation="15dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:padding="5dp"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studnetMarktext"
+            android:layout_centerVertical="true"
+            android:text="being Absent for class "
+            android:layout_marginLeft="25dp"
+            android:textSize="25dp"
+            android:gravity="center"
+
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

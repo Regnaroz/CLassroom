@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">My Classroom</string>
+
+    <string name="Welcome_message">Choose your login category :</string>
+    <string name="Student_texteview">Student</string>
+    <string name="Teacher_textview">Teacher</string>
+    <string name="Parent_textview">Parent</string>
+    <string name="Admin_textview">admin</string>
+    <string name="loginpage">Enter Your Information :</string>
+    <string name="loginButton">Log in</string>
+    <string name="usernameText">Username</string>
+    <string name="passwordText">Password</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Grades">
+        <item>Grade 1 </item>
+        <item>Grade 2 </item>
+        <item>Grade 3 </item>
+        <item>Grade 4 </item>
+        <item>Grade 5 </item>
+        <item>Grade 6 </item>
+        <item>Grade 7 </item>
+        <item>Grade 8 </item>
+        <item>Grade 9 </item>
+        <item>Grade 10 </item>
+        <item>Grade 11 </item>
+        <item>Grade 12 </item>
+
+
+    </string-array>
+
+    <string-array name="Grades_No">
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="Subjects">
+
+        <item> English </item>
+        <item> Arabic </item>
+        <item> Islamic studies </item>
+        <item> christians studies </item>
+        <item> Math </item>
+        <item> Science</item>
+        <item> physics </item>
+        <item> Chemistry </item>
+        <item> Biology </item>
+        <item> Information Technology </item>
+        <item> Geography </item>
+        <item> Citizenship </item>
+        <item> Physical Education (P.E)</item>
+        <item> Art </item>
+    </string-array>
+</resources>

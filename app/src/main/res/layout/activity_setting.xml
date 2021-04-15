@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".setting">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adminInfo"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp"
+                android:layout_margin="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+                    <com.airbnb.lottie.LottieAnimationView
+
+                        android:id="@+id/lottie_admin_information"
+                        android:layout_width="100dp"
+                        android:layout_height="110dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/lottie_information"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lottie_admin_information"
+                        android:layout_centerHorizontal="true"
+                        android:text="Admin information"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/change_logo"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="5dp"
+                app:cardElevation="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imag2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_action_school_logo"
+                       />
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imag2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Change the school logo"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/change_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp"
+                android:layout_margin="5dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/re_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <com.airbnb.lottie.LottieAnimationView
+
+                        android:id="@+id/lottie_change_name_school"
+                        android:layout_width="70dp"
+                        android:layout_height="80dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/lottie_add_name_school"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/t3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lottie_change_name_school"
+                        android:layout_centerHorizontal="true"
+                        android:text="Change the name of the school"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp" />
+
+
+
+                        
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re_name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    >
+
+                    <EditText
+                        android:id="@+id/edit_name"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="50dp"
+                        android:hint="Enter the name"
+                        android:gravity="center"
+                        />
+
+                    <Button
+                        android:id="@+id/confirm_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ok"
+                        android:layout_below="@id/edit_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:onClick="change_name_school_button"
+                        />
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logout"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="5dp"
+                app:cardElevation="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <com.airbnb.lottie.LottieAnimationView
+
+                        android:id="@+id/admin_img_logOut"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/lottielogin"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        />
+                    <TextView
+                        android:id="@+id/t4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/admin_img_logOut"
+                        android:layout_centerHorizontal="true"
+                        android:text="Log out"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

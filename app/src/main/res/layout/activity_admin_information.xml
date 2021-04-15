@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="@drawable/back"
+    tools:context=".Admin_information">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:id="@+id/lottie_info_admin"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/info_animation"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin name:"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_below="@id/lottie_info_admin"
+            />
+
+
+        <TextView
+            android:id="@+id/text_view_admin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="######"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_margin="10dp"
+            android:layout_below="@id/lottie_info_admin"
+            android:layout_toRightOf="@id/tp1"
+            android:layout_toEndOf="@id/tp5"
+            android:textColor="@color/sweet_dialog_bg_color"
+            />
+
+
+        <TextView
+            android:id="@+id/tp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="National ID:"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tp1"
+            android:textColor="@color/sweet_dialog_bg_color"
+            />
+        <TextView
+            android:id="@+id/text_view_ssn_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="######"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tp1"
+            android:layout_toRightOf="@id/tp2"
+            android:layout_toEndOf="@id/tp5"
+            android:textColor="@color/sweet_dialog_bg_color"
+            />
+        <TextView
+            android:id="@+id/tp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number :"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tp2"
+            android:textColor="@color/sweet_dialog_bg_color"
+            />
+
+        <TextView
+            android:id="@+id/text_view_phone_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="######"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tp2"
+            android:layout_toRightOf="@id/tp3"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_toEndOf="@id/tp5"
+            />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Password"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tp3"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/textview_admin_password"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="######"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tp3"
+            android:layout_toRightOf="@id/tt9"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/tp5"
+            />
+
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/deletadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_admin_password"
+            android:text="Delete Admin"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:drawableLeft="@drawable/deleteitem"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change password:"
+            android:textSize="25dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_below="@id/deletadmin"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/tp5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Current password:"
+            android:textSize="20dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_below="@id/tp4"
+            />
+        <EditText
+            android:id="@+id/admin_edit_text_current_password"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tp4"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/tp5"
+            android:layout_toEndOf="@id/tp7"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            />
+
+        <TextView
+            android:id="@+id/tp6"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="New password:"
+            android:textSize="20dp"
+            android:layout_below="@id/tp5"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            />
+
+        <EditText
+            android:id="@+id/admin_edit_text_new_password"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tp5"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_toRightOf="@id/tp6"
+            android:layout_toEndOf="@id/tp7"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/tp7"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Confirm the new password:"
+            android:textSize="20dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_below="@id/tp6"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <EditText
+            android:id="@+id/admin_edit_confirm_new_password"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tp6"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_toRightOf="@id/tp7"
+            android:inputType="textPassword"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/save_admin_pass_card_view"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="40dp"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            app:cardElevation="25dp"
+            android:layout_below="@id/tp7"
+            android:layout_centerHorizontal="true"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/material_blue_grey_90"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/berkshire_swash"
+                    android:text="Change"
+                    android:textColor="@color/sweet_dialog_bg_color"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

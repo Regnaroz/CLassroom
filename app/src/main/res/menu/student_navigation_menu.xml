@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/studentClassVideos"
+        android:title="Videos"
+        android:icon="@drawable/videoclipart"/>
+
+
+    <item
+        android:id="@+id/studentClassDocumnets"
+        android:title="Documents"
+        android:icon="@drawable/filesclipart"/>
+
+    <item
+        android:id="@+id/studentClassMarks"
+        android:title="Marks"
+        android:icon="@drawable/ic_marks_icon"/>
+
+
+
+</menu>

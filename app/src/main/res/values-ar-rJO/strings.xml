@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Classroom</string>
+    <string name="Welcome_message">اختر فئة تسجيل الدخول الخاصة بك:</string>
+    <string name="Student_texteview">طالب</string>
+    <string name="Teacher_textview">معلم</string>
+    <string name="Parent_textview">ولي أمــر</string>
+    <string name="Admin_textview">موظف التسجيل</string>
+    <string name="loginpage">"أدخل بياناتك : "</string>
+    <string name="loginButton">تـــســجــيـل الــدخــول</string>
+    <string name="usernameText">إســم الــمــســتــخــدم</string>
+    <string name="passwordText">كــلــمــة الــســـر</string>
+
+</resources>

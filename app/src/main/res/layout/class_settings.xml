@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassSettingsFragment"
+    android:background="@drawable/mywave3"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/addStudentbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Add Students "
+         />
+
+
+
+
+    <EditText
+        android:visibility="invisible"
+        android:id="@+id/AddStudentID"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/addStudentbtn"
+        android:hint="Enter Student ID "/>
+  <Button
+      android:id="@+id/confirmAdd"
+      android:visibility="invisible"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/addStudentbtn"
+      android:layout_toRightOf="@id/AddStudentID"
+      android:layout_alignParentEnd="true"
+      android:text="Add"
+      android:layout_margin="10dp"
+      />
+
+
+    <Button
+        android:id="@+id/showRemove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddStudentID"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:text="Remove Student" />
+
+    <EditText
+        android:id="@+id/RemoveStudentID"
+        android:visibility="invisible"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/showRemove"
+        android:hint="Enter Student ID "/>
+    <Button
+        android:id="@+id/RemoveStudentIdButton"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showRemove"
+        android:layout_toRightOf="@id/RemoveStudentID"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:text="Remove"
+        />
+
+
+    <Button
+        android:id="@+id/toggleStudentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Students List"
+        android:layout_below="@id/RemoveStudentIdButton"
+        android:layout_margin="10dp"
+        />
+
+
+    <ListView
+        android:id="@+id/StudentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggleStudentList"
+
+        android:background="@drawable/blue_button_background"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

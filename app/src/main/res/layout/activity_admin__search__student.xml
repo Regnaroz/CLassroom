@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:background="@drawable/back"
+    tools:context=".Admin_Search_Student">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:id="@+id/lottie_info"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/info_animation"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student name:"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:layout_below="@id/lottie_info"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/white"
+            />
+
+
+        <TextView
+            android:id="@+id/text_name_student"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/tt1"
+            android:layout_toEndOf="@id/tt7"
+            android:layout_below="@id/lottie_info"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="######"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+        <TextView
+
+
+            android:id="@+id/tt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="National ID:"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_margin="10dp"
+            android:layout_below="@id/tt1"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/textview_ssn_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="######"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_margin="10dp"
+            android:layout_below="@id/tt1"
+            android:layout_toRightOf="@id/tt1"
+            android:layout_toEndOf="@id/tt7"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number :"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_margin="10dp"
+            android:layout_below="@id/tt2"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/textview_phone_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="######"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tt2"
+            android:layout_toRightOf="@id/tt3"
+            android:layout_toEndOf="@id/tt7"
+            android:textColor="@color/white"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parent name:"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/textview_phone_student"
+            android:textColor="@color/white"
+
+            />
+
+
+        <TextView
+            android:id="@+id/textview_name_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="######"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_margin="10dp"
+            android:layout_below="@id/textview_phone_student"
+            android:layout_toRightOf="@id/tt6"
+            android:layout_toEndOf="@id/tt7"
+            android:textColor="@color/white"
+            />
+
+
+        <TextView
+            android:id="@+id/tt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parent National ID:"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tt6"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/textview_ssn_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="######"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tt6"
+            android:layout_toRightOf="@id/tt7"
+            android:layout_toEndOf="@id/tt7"
+            android:textColor="@color/white"
+
+            />
+        <TextView
+            android:id="@+id/tt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone parent :"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tt7"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/textview_phone_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="######"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tt7"
+            android:layout_toRightOf="@id/tt8"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/tt7"
+            />
+        <TextView
+            android:id="@+id/tt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Password"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tt8"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/textview_student_password"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="######"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_below="@id/tt8"
+            android:layout_toRightOf="@id/tt9"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/tt7"
+            />
+
+
+        <TextView
+            android:id="@+id/deletstudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_student_password"
+            android:text="Delete Student"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:drawableLeft="@drawable/deleteitem"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change password:"
+            android:textSize="25dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_below="@id/deletstudent"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tp5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Current password:"
+            android:textSize="20dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_below="@id/tp4"
+            />
+        <EditText
+            android:id="@+id/admin_edit_text_current_password"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tp4"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/tp5"
+            android:layout_toEndOf="@id/tp7"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            />
+
+        <TextView
+            android:id="@+id/tp6"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="New password:"
+            android:textSize="20dp"
+            android:layout_below="@id/tp5"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            />
+
+        <EditText
+            android:id="@+id/admin_edit_text_new_password"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tp5"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_toRightOf="@id/tp6"
+            android:layout_toEndOf="@id/tp7"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/tp7"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Confirm the new password:"
+            android:textSize="20dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_below="@id/tp6"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <EditText
+            android:id="@+id/admin_edit_confirm_new_password"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tp6"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:textColor="@color/sweet_dialog_bg_color"
+            android:layout_toRightOf="@id/tp7"
+            android:inputType="textPassword"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/save_admin_pass_card_view"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="40dp"
+            android:clickable="true"
+            android:layout_margin="20dp"
+            app:cardElevation="25dp"
+            android:layout_below="@id/tp7"
+            android:layout_centerHorizontal="true"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/material_blue_grey_90"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/berkshire_swash"
+                    android:text="Change"
+                    android:textColor="@color/sweet_dialog_bg_color"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

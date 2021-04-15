@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ClassVideos"
+        android:title="Videos"
+        android:icon="@drawable/videoclipart"/>
+
+
+    <item
+        android:id="@+id/ClassDocumnets"
+        android:title="Documents"
+        android:icon="@drawable/filesclipart"/>
+    <item
+        android:id="@+id/ClassMarks"
+        android:title="Marks"
+        android:icon="@drawable/ic_marks_icon"
+        />
+
+
+    <item
+        android:id="@+id/ClassNotes"
+        android:title="Notes"
+        android:icon="@drawable/ic_node"
+        />
+
+
+
+    <item
+        android:id="@+id/ClassChat"
+        android:title="Options"
+        android:icon="@drawable/ic_settingsclip"
+        />
+
+</menu>
